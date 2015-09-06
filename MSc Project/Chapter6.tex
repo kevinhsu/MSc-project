@@ -1,0 +1,18 @@
+\chapter{Conclusions and Future Work}
+\label{chapterlabel6}
+
+In this project, we consider in RTB display advertising how advertisers actively bid an impression considering a long-term objective. It is a combination of CTR estimation and repeated auctions. First, we use the CTR prediction models to find the distribution of market price estimator and then we deal with a reinforcement learning problem to maximise the total utility during the finite sequential auctions.
+
+Three CTR prediction models are applied here to obtain the estimator. FFM usually has the better performance than BOPR and FTRL. The ensemble of these three predictors can lead to more effective performance. This result beats the benchmark using LR and GBDT \cite{zhang2014real}.
+
+Our analysis shows that in the second price auction with a logistic click-through model, the optimal bid strategy is not to bid the true value but bid a higher price than it in a finite sequential process. In the end, after advertisers obtain enough information and feedbacks from the market, the bidding price will converge to their true value and it becomes one-shot auction with side information.
+
+Some problems with regard to the dynamic programming of bidding aim to weaken the conditions. We want to treat the model as general as possible and some other practical factors will be taken into consideration. Therefore, two more cases can be included in future work: 
+
+\begin{enumerate}
+\item A more complicated situation based on the second case is that all advertisers \emph{do not} know their own value. They can actively learn market price landscape from the winning campaigns.  What is the optimal bidding price $b(\mathbf{x}_t; \mathbf{w}_i,\alpha,\gamma ,\sigma)$? Intuitively, this contains an exploration process which also may lead to a higher bid than the first case.
+
+\item If we add budget $B$ as a constraint of the previous cases. There will be one more element in the state space. The stochastic bids by the competing market price lead to a new MDP formulation of the optimal policy. If there is no budget left ($B=0$), the bidding is stopped. What is the optimal bidding price $b(\mathbf{x}_t; \mathbf{w}_i, B, \alpha,\gamma ,\sigma)$? 
+\end{enumerate}
+
+Besides, we can investigate on the bidding function which directly covers the bid request features, not the KPI alone. We also intend to extend our optimization framework to model more uncertainty and the risk of the bidding.

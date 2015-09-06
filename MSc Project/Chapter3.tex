@@ -1,0 +1,117 @@
+\chapter{Auction Theory}
+\label{chapterlabel3}
+
+In this chapter, we discuss the basic auction theory which is used in online advertising. The most commonly applied auction is sealed first-price bid and sealed second-price bid. According to the closed form solutions of these two kinds of auction as games, there are two conclusions to the bidding strategy based on the true value. 
+
+\section{Bayesian Nash Equilibrium}
+Bayesian Nash Equilibrium is firstly defined by Harsanyi \cite{johncharsanyi1967}. For each auction, the participant only knows their own type, but they do not know other players' types. The type here means the input value of their strategies. In a scenario of real-time bidding, it can be the true value or signal of each ad for advertisers. True value is the belief that what is the real worth of this ad. All advertisers will bid a price based on their own true value. The way mapping from the set of possible types to the bidding price is called bidding strategy. In an auction, the basic environment consists of:
+\begin{itemize}
+\item One object to be sold
+\item A set of independent and identical bidders $\bs{I} = \{ 1,2,...,N\}$
+\item A set of possible independent types or signals $\theta_1, \theta_2,...,\theta_N$ and $\theta_i \in [\underline{\theta}, \bar{\theta}]$
+\item A set of bidding strategies $B_1, B_2,...,B_N$ for each bidder
+\item A utility (or reward) function $u_i$ for bidder $i$ 
+\item A cumulative distribution $F(\cdot)$ over the set of types for each bidder
+\end{itemize}
+In  short, a \emph{Bayesian Game} in ad campaign context consists of five elements which can be expressed as a tuple:
+\begin{equation}
+BG=[\bm{I}, \{ B_i \}_{i \in \bm{I}}, \{ u_{i}(\cdot) \}_{i \in \bm{I}},  \theta_1 \times \cdot \cdot \cdot \times \theta_N, F(\cdot)]
+\end{equation}
+
+Further, a \emph{Bayesian Nash equilibrium} is a list of bidding functions $(b_{1}^{*}(\cdot),...,b_{N}^{*}(\cdot))$. For $\forall i \in \bm{I}, \forall \theta_i$ and $\forall b_i \in B_i$, it has
+\begin{equation}
+\int_{\theta_-i}u(b_{i}^{*}, b_{-i}^{*}, \theta_{i}, \theta_{-i})d\hat{F}_{i}(\theta_{-i}|\theta_{i}) \geq \int_{\theta_-i}u(b_{i}, b_{-i}^{*}, \theta_{i}, \theta_{-i})d\hat{F}_{i}(\theta_{-i}|\theta_{i})
+\end{equation}
+where notations denote $\theta_{-i} \equiv (\theta_{j})_{j \neq i}$ and $\hat{F}_{i}(\theta_{-i})=F_{1}(\theta_1)\cdot \cdot \cdot F_{i-1}(\theta_{i-1})F_{i+1}(\theta_{i+1})\cdot \cdot \cdot F_{N}(\theta_{N})$.
+
+Accord to the Nash equilibrium inequality applying Bayesian decision function, it implies the situation that each bidder has a best response strategy and choose the best Bayesian decision functions based on the best bidding strategies of other bidders. They also use the Bayesian decision functions to determine their response. This Nash equilibrium is not necessary to be unique in an auction environment. Besides, if all players use the same decision function, we call this a \emph{symmetric Bayesian Nash equilibrium}. In the following sections, we use this setting for all games of incomplete information and we assume that all bidders are identical and independent.
+\section{Auction as Games}
+In this section, a brief of introduction to auction will be provided. Auction can be basically classified into four forms with regard to several distinct criteria.They are English, Dutch, First-Price, and Vickrey auctions respectively. 
+
+The English or publicly ascending-price auction is the best-known format. It begins as a low price and bidders incrementally increase the price. Once no other bidder is willing to give a higher price, the auction stops and the bidder with the highest standing price wins the bid and pays the highest price. 
+
+Dutch is kind of open descending-price auction which conducts in the opposite way. Bidding starts at a high price that continuously declines until one of the bidders stops the process. That participant wins the object and pays the stopped price.
+
+In terms of Vickrey auction, the only difference is that bidder with the highest price wins the bid and pays the second highest price in the market. For both first-price and second-price sealed-bid auction, each player does not have the knowledge of the bids proposed by others. They only can obtain information from the market after winning or losing the bid. 
+
+The objective of each bidder is to maximize the utility of the auction or campaign. Once players determine their intuitive true value and bidding price, the utility is the expected difference between the two which can be positive or negative. In a one-shot auction, we usually assume that player's bidding price will not exceed his true value since there is no \emph{exploitation-exploration} trade-off.
+
+Decision making in repeated games contains two fundamental choices. Exploration is to sacrifice current benefit to gather more information which may better the performance in the future. It is long-term, risky and uncertain. The best long-term and overall strategy may involve short-term loss. In the contrary, exploitation process is short-term, immediate and gives certain benefits. 
+
+In this project, we mainly focus on Real-time Bidding (RTB). RTB is a form of auction game. Unlike traditional sponsored search or contextual advertising, RTB allows an advertiser to submit a bid for each individual impression or keyword campaign in a short time frame. Sponsored search is more like a multi-bandit problem, the number of objects is more than one and a mechanism for ranking the bids is involved. The approach to deal with exploitation and exploration in repeated games will be introduced in detail in Chapter 4.
+
+\section{Sealed First-price Auction}
+In a sealed first-price auction, bidders will submit their bids $b_1,...,b_N$ and they do not know others' price. Under this setting, if bidders submit their true value, they will earn a zero profit or utility no matter whether they win or lose. Intuitively, they should bid a price somewhat lower than the corresponding true value and then it can potentially provide a positive utility when winning the bid.
+
+In a more theoretical perspective, we consider an approach to solve the symmetric equilibrium bidding strategies. Assume that the bidding strategy is a strictly increase function. It indicates that higher true value will lead to higher bid. Also, suppose that bidder $j \neq i$ follows identical bidding strategies $b_j=b(\theta_j)$ with the above properties. Therefore, the utility of bidder $i$ for one-shot auction can be expressed as 
+\begin{equation}
+u(b_i,\theta_i)=(\theta_i-b_i) \cdot \Pr [b_j=b(\theta_j)\leq b_i, \forall j \neq i]
+\end{equation}
+In order to maximize the utility by choosing an optimal bidding strategy, we can obtain the objective. Thus, bidder $i$ chooses $b$ to solve
+\begin{equation}
+\label{objective}
+\underset{b_i} \max (\theta_i-b_i)F^{N-1}(b^{-1}(b_i))
+\end{equation}
+Differentiate Eq.~(\ref{objective}) with respect to $b_i$ and let it be zero. The first order condition becomes
+\begin{equation}
+(\theta_i-b_i)(N-1)F^{N-2}(b^{-1}(b_i))f(b^{-1}(b_i))\frac{1}{b'(b^{-1}(b_i))}-F^{N-1}(b^{-1}(b_i))=0
+\end{equation}
+As a symmetric equilibrium, $b_i=b(\theta_i)$, so the first order condition transforms to a differential equation 
+\begin{equation}
+b'(\theta_i)=(\theta_i-b(\theta_i))(N-1)\frac{f(\theta_i)}{F(\theta_i)}
+\end{equation}
+This can be solved, using the boundary condition that $b(\underline{\theta})=\underline{\theta}$, to obtain
+\begin{equation}
+\label{biddingfirst}
+b^{*}(\theta_i)=\theta_i-\frac{\int_{\underline{\theta}}^{\theta_i}F^{N-1}(\widetilde{\theta})d\widetilde{\theta}}{F^{N-1}(\theta_i)}
+\end{equation}
+As we assume the $b(\theta_i)$ is increasing and differentiable. The symmetric equilibrium shows that arbitrary bidder in this auction can use Eq.~(\ref{biddingfirst}) to find his optimal bidding strategy. A closely related, and often convenient, approach to identify necessary conditions for a symmetric equilibrium is to exploit the envelope theorem.
+\begin{equation}
+\label{envelope}
+u(\theta_i)=(\theta_i-b(\theta_i))F^{N-1}(\theta_i)
+\end{equation}
+Likewise, we can find a best-response in the equilibrium for bidder $i$
+\begin{equation}
+u(\theta_i)=\underset{b_i} \max (\theta_i-b_i)F^{N-1}(b^{-1}(b_i))
+\end{equation}
+After applying the envelope theorem \cite{milgrompaililyasegal2002}, we obtain
+\begin{equation}
+\frac{d}{d \theta}u(\theta)|_{\theta_i}=F^{N-1}(b^{-1}(b(\theta_i)))=F^{N-1}(\theta_i)
+\end{equation}
+and also,
+\begin{equation}
+\label{envelope2}
+u(\theta_i)=u(\underline{\theta})+\int_{\underline{\theta}}^{\theta_i}F^{N-1}(\tilde{\theta})d\tilde{\theta}
+\end{equation}
+We have $u(\underline{\theta})=0$ because we cannot bid a negative value. Take Eq.~(\ref{envelope}) and Eq.~(\ref{envelope2}) into consideration, we can solve the Bayesian equilibrium situation and obtain the optimal bidding strategy as
+\begin{equation}
+\label{biddingfirst2}
+b^{*}(\theta_i)=\theta_i-\frac{\int_{\underline{\theta}}^{\theta_i}F^{N-1}(\widetilde{\theta})d\widetilde{\theta}}{F^{N-1}(\theta)}
+\end{equation}
+Hence, Eq.~(\ref{biddingfirst2}) is the same as Eq.~(\ref{biddingfirst}) given the condition for a Bayesian equilibrium. The envelope formula actually satisfies bidding assumptions. The value of shading is therefore $\int_{\underline{\theta}}^{\theta_i}F^{N-1}(\widetilde{\theta})d\widetilde{\theta}$. Obviously, it declines as the number of bidders increases. Intrinsically, if there are a large number of opponents ($N \rightarrow \infty $) in the auction, they have to bid as close as possible to their true value ($b_i \rightarrow \theta_i$). Otherwise, they do not have any chance to win \cite{robertwilson1977}.
+
+\section{Sealed Second-price Auction}
+In a sealed second-price auction, the procedure is similar as corresponding first-price auction. All bidders submit their bid simultaneously without observing others' bids. In such scenario, the winner is who submitted the highest price and he only needs to pay the second highest price in the market. The paying price is also called market price. Even though bidder submits his true value every time, he still can obtain a positive utility. If he wins, the second highest price cannot be more than his bid. Meanwhile, if he loses, the utility stays as zero. Thus, bidding true value should result in a positive utility. We will formally prove this strategy is the optimal for second-price sealed-bid auction.
+
+Denote $\theta_t$ is the highest price of other bidder $j$ where $j \neq i$. From bidder $i$'s view, as he does not know other bidders' price, he can only know the expected utility which is written as
+\begin{equation}
+\label{ExU}
+u(b_i, \theta_i) = E [ (\theta_i - \theta_t) \bm{I}_{b_{i} > \theta_t} ]
+\end{equation}
+where $\bm{I}_{b_{i} > \theta_t}$  denotes an indicator to identify the probability of achieving the highest price in this round. It implies when the bidder can win the auction. Therefore, we can rewrite expected utility Eq.~(\ref{ExU}) in detail to obtain
+\begin{equation}
+\label{secondprice}
+u(b_i, \theta_i)=\int_{\underline{\theta}}^{b_i}(N-1)(\theta_i-\theta_t)f(\theta_t)F(\theta_t)^{N-2}d\theta_t
+\end{equation}
+Because there are $N-1$ other bidders. The cumulative distribution function of the highest among $N-1$ players is given by $F^{N-1}(\cdot)$.
+In order to maximize Eq.~(\ref{secondprice}), if $b_i$ is smaller than $\theta_i$, there is a amount  of increase in the integration
+\begin{equation}
+\int_{b_i}^{\theta_i}(N-1)(\theta_i - \theta_t)f(\theta_t)F(\theta_t)^{N-2}d\theta_t
+\end{equation}
+Now, if $b_i < \theta_t < \theta_i$, the above integration is positive as $\theta_i-\theta_t > 0$. On the contrary, if $b_i > \theta_t > \theta_i$, this region gives a negative value. Hence, the maximum of expected utility can be achieved when $b_i=\theta_i$. Based on this integration, a revenue equivalence property can be proved to show first-price and second-price have the same expected revenue for the same object and participants but different mechanisms \cite{menezes2005introduction}.
+
+In summary, bidding true value is the optimal strategy for second-price auction. 
+
+
+
+

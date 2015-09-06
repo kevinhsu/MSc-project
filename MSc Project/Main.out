@@ -1,0 +1,26 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Click-through Rate \(CTR\) Prediction}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Origins of Data Features}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Preprocessing and Feature Engineering}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Online Learning Algorithms}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.3.1}{Bayesian Online Probit Regression \(BOPR\)}{section.2.3}% 6
+\BOOKMARK [2][-]{subsection.2.3.2}{Follow the Regularized Leader \(FTRL\)}{section.2.3}% 7
+\BOOKMARK [2][-]{subsection.2.3.3}{Field-aware Factorization Machine \(FFM\)}{section.2.3}% 8
+\BOOKMARK [0][-]{chapter.3}{Auction Theory}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Bayesian Nash Equilibrium}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Auction as Games}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.3}{Sealed First-price Auction}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.4}{Sealed Second-price Auction}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{Active Learning in Real-time Bidding \(RTB\)}{}% 14
+\BOOKMARK [1][-]{section.4.1}{One-shot RTB Auction}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{Sequential Auction with Certain CTR}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.3}{Greedy Product-Limit Algorithm}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.4}{Temporal Difference \(TD\) Learning for Optimal Bidding}{chapter.4}% 18
+\BOOKMARK [2][-]{subsection.4.4.1}{Q-Learning: Off-Policy TD Control}{section.4.4}% 19
+\BOOKMARK [2][-]{subsection.4.4.2}{Sarsa: On-Policy TD Control}{section.4.4}% 20
+\BOOKMARK [1][-]{section.4.5}{Kernelized Value Function Approximation}{chapter.4}% 21
+\BOOKMARK [0][-]{chapter.5}{Summary and Discussion of Results}{}% 22
+\BOOKMARK [0][-]{chapter.6}{Conclusions and Future Work}{}% 23
+\BOOKMARK [0][-]{Item.6}{Bibliography}{}% 24
+\BOOKMARK [0][-]{Item.40}{Appendices}{}% 25
+\BOOKMARK [0][-]{appendix.A}{Dataset and Repository}{}% 26

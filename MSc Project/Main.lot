@@ -1,0 +1,15 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces The log data format of iPinYou dataset.\relax }}{15}{table.caption.8}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Advertiser fields and statistics\relax }}{15}{table.caption.9}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Notation and description of BOPR\relax }}{20}{table.caption.14}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Notation and description of FTRL-Proximal\relax }}{23}{table.caption.17}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Notation and description of FFM\relax }}{25}{table.caption.18}
+\contentsline {table}{\numberline {2.6}{\ignorespaces A concrete FFM example of overall CTR estimation in practice\relax }}{26}{table.caption.19}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces The logloss of CTR estimation performance\relax }}{50}{table.caption.24}
+\contentsline {table}{\numberline {5.2}{\ignorespaces The AUC of CTR estimation performance\relax }}{50}{table.caption.25}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

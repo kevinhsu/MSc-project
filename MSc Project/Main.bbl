@@ -1,0 +1,190 @@
+\begin{thebibliography}{10}
+
+\bibitem{emarketer2013}
+eMarketer.
+\newblock Rtb ad spend continues robust growth.
+\newblock 2013.
+
+\bibitem{Zhang:2014:ORB:2623330.2623633}
+Weinan Zhang, Shuai Yuan, and Jun Wang.
+\newblock Optimal real-time bidding for display advertising.
+\newblock In {\em Proceedings of the 20th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '14, pages 1077--1086, New York,
+  NY, USA, 2014. ACM.
+
+\bibitem{williamvickrey1961}
+William Vickrey.
+\newblock Counterspeculation, auctions, and competitive sealed tenders.
+\newblock {\em Journal of Finance}, 16:8--39, 1961.
+
+\bibitem{zhang2015statistical}
+Weinan Zhang and Jun Wang.
+\newblock Statistical arbitrage mining for display advertising.
+\newblock {\em KDD}, 2015.
+
+\bibitem{zhang2014real}
+Weinan Zhang, Shuai Yuan, Jun Wang, and Xuehua Shen.
+\newblock Real-time bidding benchmarking with ipinyou dataset.
+\newblock {\em arXiv preprint arXiv:1407.7073}, 2014.
+
+\bibitem{xinranhejunfengpanetc2014}
+Xinran He, Junfeng Pan, Ou~Jin, Tianbing Xu, Bo~Liu, Tao Xu, Yanxin Shi,
+  Antoine Atallah, Ralf Herbrich, Struart Bowers, and Joaquin~Quinonero
+  Candela.
+\newblock Practical lessons from predicting clicks on ads at facebook.
+\newblock {\em KDD}, 2014.
+
+\bibitem{jeromeh.friedman1999}
+Jerome~H. Friedman.
+\newblock Greedy function approximation: A gradient boosting machine.
+\newblock feb 1999.
+
+\bibitem{yoshuabengioolivierdelalleau2012}
+Yoshua Bengio and Olivier Delalleau.
+\newblock On the expressive power of deep architectures.
+\newblock 2012.
+
+\bibitem{olivierdelalleauyoshuabengio2012}
+Olivier Delalleau and Yoshua Bengio.
+\newblock Shallow vs. deep sum-product networks.
+\newblock {\em NIPS}, 2012.
+
+\bibitem{h.brendanmcmahangaryholt2013}
+H.~Brendan McMahan, Gary Holt, D.~Sculley, Michael Young, Dietmar Ebner, Julian
+  Grady, Lan Nie, Todd Phillips, Eugene Davydov, Daniel Golovin, Sharat
+  Chikkerur, Dan Liu, Martin Wattenberg, Arnar~Mar Hranfnkelsson, Tom Boulos,
+  and Jeremt Kubica.
+\newblock Ad click prediction: a view from the trenches.
+\newblock {\em KDD}, 2013.
+
+\bibitem{thoregraepeljoaquinquinonerocandelathomasborchertralfherbrich2010}
+Thore Graepel, Joaquin~Quinonero Candela, Thomas Borchert, and Ralf Herbrich.
+\newblock Web-scale bayesian click-through rate prediction for sponsored search
+  advertising in microsoft bing search engine.
+\newblock {\em 27th International Conference on Machine Learning}, apr 2010.
+
+\bibitem{steffenrendle2010}
+Steffen Rendle.
+\newblock Factorization machines with {libFM}.
+\newblock {\em ACM Trans. Intell. Syst. Technol.}, 3(3):57:1--57:22, May 2012.
+
+\bibitem{h.brendanmcmahan2011}
+H.~Brendan McMahan.
+\newblock Follow-the-regularized-leader and mirror descent: Equivalence
+  theorems and l1 regularization.
+\newblock {\em International Con- ference on Artificial Intelligence and
+  Statistics (AISTATS)}, 15, 2011.
+
+\bibitem{steffenrendlelarsschmidtthieme2010}
+Steffen Rendle and Lars Schmidt-Thieme.
+\newblock Pairwise interaction tensor factorization for personalized tag
+  recommendation.
+\newblock 2010.
+
+\bibitem{johncharsanyi1967}
+JOHN~C HARSANYI.
+\newblock Games with incomplete information played by bayesian players.
+\newblock 1967.
+
+\bibitem{milgrompaililyasegal2002}
+Milgrom, Pail, and Ilya Segal.
+\newblock Envelope theorems for arbitrary choice sets.
+\newblock {\em Econometrica}, 70:583--601, 2002.
+
+\bibitem{robertwilson1977}
+Robert Wilson.
+\newblock A bidding model of perfect competition.
+\newblock {\em Review of Economic Studies}, 1977.
+
+\bibitem{menezes2005introduction}
+Flavio~M Menezes and Paulo~Klinger Monteiro.
+\newblock {\em An introduction to auction theory}.
+\newblock Oxford University Press, 2005.
+
+\bibitem{christianborgsjenniferchayesomidetesaminicoleimmorlicakamaljainmohammadmahdian2007}
+Christian Borgs, Jennifer Chayes, Omid Etesami, Nicole Immorlica, Kamal Jain,
+  and Mohammad Mahdian.
+\newblock Dynamics of bid optimization in online advertisement auctions.
+\newblock {\em WWW}, 2007.
+
+\bibitem{peterauernicolocesabianchipaulfischer2002}
+PETER AUER, NICOLO CESA-BIANCHI, and PAUL FISCHER.
+\newblock Finite-time analysis of the multiarmed bandit problem.
+\newblock {\em Machine Learning}, 47:235?256, 2002.
+
+\bibitem{saiminglimohammadmahdianr.prestonmcafee2010}
+Sai-Ming Li, Mohammad Mahdian, and R.~Preston McAfee.
+\newblock Value of learning in sponsored search acutions.
+\newblock {\em Internet and Network Economics}, 6484:294--305, 2010.
+
+\bibitem{deepakagarwalbeechungchenpradheepelango2009}
+Deepak Agarwal, Bee-Chung Chen, and Pradheep Elango.
+\newblock Explore/exploit schemes for web content optimization.
+\newblock {\em ICDM}, 2009.
+
+\bibitem{patrickhummelr.prestonmcafee2014}
+Patrick Hummel and R.~Preston McAfee.
+\newblock Machine learning in an auction environment.
+\newblock {\em WWW}, apr 2014.
+
+\bibitem{Amin_budgetoptimization}
+Kareem Amin, Michael Kearns, Peter Key, and Anton Schwaighofer.
+\newblock Budget optimization for sponsored search: Censored learning in mdps,
+  2012.
+
+\bibitem{ivantajduharbojanadalbeloba2012}
+Ivan Stajduhar and Bojana Dalbelo-Basic.
+\newblock Uncensoring censored data for machine learning: A likelihood-based
+  approach.
+\newblock {\em Expert Systems with Applications: An International Journal},
+  39(8):7226--7234, jun 2012.
+
+\bibitem{e.l.kaplanpaulmeier1958}
+E.~L. Kaplan and Paul Meier.
+\newblock Nonparametric estimation from incomplete observations.
+\newblock {\em Journal of the American Statistical Association},
+  53(282):457--481, jun 1958.
+
+\bibitem{robertzeithammer2007}
+Robert Zeithammer.
+\newblock Strategic bid-shading and sequential auctioning with learning from
+  past prices.
+\newblock {\em MANAGEMENT SCIENCE}, 53(9):1510?1519, sep 2007.
+
+\bibitem{burrsettles2010}
+Burr Settles.
+\newblock Active learning literature survey.
+\newblock jan 2010.
+
+\bibitem{michaelgabrieljohnmoore1991}
+Michael Gabriel and John Moore.
+\newblock {\em Learning and Computational Neuroscience: Foundations of Adaptive
+  Networks}.
+\newblock The MIT Press, 1991.
+
+\bibitem{richards.suttonandrewg.barto1998}
+Richard~S. Sutton and Andrew~G. Barto.
+\newblock {\em Reinforcement Learning: An Introduction}.
+\newblock MIT Press, Cambridge, MA, 1998.
+
+\bibitem{gavintaylorronaldparr2009}
+Gavin Taylor and Ronald Parr.
+\newblock Kernelized value function approximation for reinforcement learning.
+\newblock {\em International Conference on Machine Learning}, 2009.
+
+\bibitem{ronaldparrgavintaylorchristopherpainterwakefieldlihonglimichaellittman}
+Ronald Parr, Gavin Taylor, Christopher Painter-Wakefield, Lihong Li, and
+  Michael Littman.
+\newblock Linear value function approximation and linear models.
+
+\bibitem{franciscos.melom.isabelribeiro2007}
+Francisco~S. Melo and M.~Isabel Ribeiro.
+\newblock Convergence of q-learning with linear function approximation.
+\newblock {\em Proceedings of the European Control Conference}, jul 2007.
+
+\bibitem{miloshauskrechtbranislavkveton}
+Milos Hauskrecht and Branislav Kveton.
+\newblock Linear program approximations for factored continuous-state markov
+  decision processes.
+
+\end{thebibliography}

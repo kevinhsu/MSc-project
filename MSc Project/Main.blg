@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Main.aux
+The style file: unsrt.bst
+A level-1 auxiliary file: Preamble.aux
+A level-1 auxiliary file: Chapter1.aux
+A level-1 auxiliary file: Chapter2.aux
+A level-1 auxiliary file: Chapter3.aux
+A level-1 auxiliary file: Chapter4.aux
+A level-1 auxiliary file: Chapter5.aux
+A level-1 auxiliary file: Chapter6.aux
+A level-1 auxiliary file: Appendices.aux
+Database file #1: reference.bib
+Warning--I didn't find a database entry for "michaeljahrerandreastöscherjeongyoonleejingjingdeng2012"
+Warning--empty journal in emarketer2013
+Warning--empty journal in jeromeh.friedman1999
+Warning--empty journal in yoshuabengioolivierdelalleau2012
+Warning--empty journal in steffenrendlelarsschmidtthieme2010
+Warning--empty journal in johncharsanyi1967
+Warning--empty journal in burrsettles2010
+Warning--empty journal in ronaldparrgavintaylorchristopherpainterwakefieldlihonglimichaellittman
+Warning--empty year in ronaldparrgavintaylorchristopherpainterwakefieldlihonglimichaellittman
+Warning--empty journal in miloshauskrechtbranislavkveton
+Warning--empty year in miloshauskrechtbranislavkveton
+You've used 34 entries,
+            1791 wiz_defined-function locations,
+            619 strings with 9214 characters,
+and the built_in function-call counts, 6387 in all, are:
+= -- 501
+> -- 359
+< -- 1
++ -- 134
+- -- 100
+* -- 385
+:= -- 1105
+add.period$ -- 100
+call.type$ -- 34
+change.case$ -- 31
+chr.to.int$ -- 0
+cite$ -- 44
+duplicate$ -- 298
+empty$ -- 601
+format.name$ -- 100
+if$ -- 1378
+int.to.chr$ -- 0
+int.to.str$ -- 34
+missing$ -- 36
+newline$ -- 170
+num.names$ -- 34
+pop$ -- 118
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 128
+stack$ -- 0
+substring$ -- 224
+swap$ -- 37
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 10
+while$ -- 46
+width$ -- 36
+write$ -- 341
+(There were 11 warnings)

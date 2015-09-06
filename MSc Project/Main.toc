@@ -1,0 +1,26 @@
+\contentsline {chapter}{\numberline {1}Introduction}{9}{chapter.1}
+\contentsline {chapter}{\numberline {2}Click-through Rate (CTR) Prediction}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Origins of Data Features}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}Preprocessing and Feature Engineering}{16}{section.2.2}
+\contentsline {section}{\numberline {2.3}Online Learning Algorithms}{19}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Bayesian Online Probit Regression (BOPR)}{19}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Follow the Regularized Leader (FTRL)}{23}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Field-aware Factorization Machine (FFM)}{25}{subsection.2.3.3}
+\contentsline {chapter}{\numberline {3}Auction Theory}{28}{chapter.3}
+\contentsline {section}{\numberline {3.1}Bayesian Nash Equilibrium}{28}{section.3.1}
+\contentsline {section}{\numberline {3.2}Auction as Games}{29}{section.3.2}
+\contentsline {section}{\numberline {3.3}Sealed First-price Auction}{30}{section.3.3}
+\contentsline {section}{\numberline {3.4}Sealed Second-price Auction}{32}{section.3.4}
+\contentsline {chapter}{\numberline {4}Active Learning in Real-time Bidding (RTB)}{34}{chapter.4}
+\contentsline {section}{\numberline {4.1}One-shot RTB Auction}{36}{section.4.1}
+\contentsline {section}{\numberline {4.2}Sequential Auction with Certain CTR}{37}{section.4.2}
+\contentsline {section}{\numberline {4.3}Greedy Product-Limit Algorithm}{39}{section.4.3}
+\contentsline {section}{\numberline {4.4}Temporal Difference (TD) Learning for Optimal Bidding}{40}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Q-Learning: Off-Policy TD Control}{40}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Sarsa: On-Policy TD Control}{42}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Kernelized Value Function Approximation}{43}{section.4.5}
+\contentsline {chapter}{\numberline {5}Summary and Discussion of Results}{49}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{56}{chapter.6}
+\contentsline {chapter}{Bibliography}{58}{Item.6}
+\contentsline {chapter}{Appendices}{62}{Item.40}
+\contentsline {chapter}{\numberline {A}Dataset and Repository}{62}{appendix.A}

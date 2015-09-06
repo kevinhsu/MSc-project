@@ -1,0 +1,23 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces An illustration of a DSP and its bidding engine in RTB display advertising\relax }}{10}{figure.caption.6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The work flow chart of CTR estimation procedure\relax }}{13}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces CTR distribution against different features of all advertisers\relax }}{17}{figure.caption.10}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The GBDT can be used to generate new features\relax }}{18}{figure.caption.11}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The deep structure of DANOVA for feature engineering\relax }}{18}{figure.caption.12}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The hashing trick is used to save RAM for computation\relax }}{18}{figure.caption.13}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Factor graph model of BOPR with message flow\relax }}{21}{figure.caption.15}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Plot of learning step size function $\nu (t)$ and $q(t)$\relax }}{22}{figure.caption.16}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The workflow chart of active learning in sequential auction with certain CTR\relax }}{38}{figure.caption.20}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Markov Decision Process (MDP) for the estimator of market price landscape\relax }}{38}{figure.caption.21}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces MDP for two-steps RTB auction\relax }}{46}{figure.caption.22}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces MDP for three-steps RTB auction\relax }}{47}{figure.caption.23}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The ROC metric for evaluating the ensemble CTR output quality of advertisers\relax }}{52}{figure.caption.27}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The influence of the imbalance ratio on learning performance\relax }}{53}{figure.caption.28}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces The number of winning bid and price for various iterations of Q-Learning\relax }}{54}{figure.caption.29}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces The number of winning bid and price for various iterations of Sarsa\relax }}{55}{figure.caption.30}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
